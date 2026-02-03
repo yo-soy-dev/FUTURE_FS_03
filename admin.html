@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Urban Brew | Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+  <button class="menu-btn"><i class="fa fa-bars"></i></button>
+
+  <div class="admin-container">
+
+    <aside class="sidebar">
+      <h2>☕ Urban Brew</h2>
+      <ul>
+        <li class="active" data-target="dashboard"><i class="fa fa-gauge"></i> Overview</li>
+        <li data-target="story"><i class="fa fa-pen"></i> Our Story</li>
+        <li data-target="menu"><i class="fa fa-mug-hot"></i> Coffee Menu</li>
+        <li data-target="contact"><i class="fa fa-phone"></i> Contact Details</li>
+        <li class="logout"><i class="fa fa-right-from-bracket"></i> Sign Out</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Admin Dashboard</h1>
+      <p class="sub">Manage your café website content</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fa fa-mug-hot"></i>
+          <div>
+            <h2 id="menuCount">0</h2>
+            <p>Menu Items</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i class="fa fa-users"></i>
+          <div>
+            <h2 id="visitorCount">0</h2>
+            <p>Monthly Visitors</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i class="fa fa-pen-to-square"></i>
+          <div>
+            <h2 id="updateCount">0</h2>
+            <p>Content Updates</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i class="fa fa-star"></i>
+          <div>
+            <h2 id="avgRating">0</h2>
+            <p>Avg Rating</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-section="menu">
+        <h3>Manage Menu</h3>
+        <input id="menuName" placeholder="Item name">
+        <input id="menuPrice" placeholder="Price">
+        <button onclick="addMenu()">Add Item</button>
+        <ul id="menuList"></ul>
+      </div>
+
+      <div class="card" data-section="story">
+        <h3>Edit Website Content</h3>
+        <form id="siteForm">
+          <label>Café Name</label>
+          <input type="text" id="cafeName">
+
+          <label>Hero Heading</label>
+          <input type="text" id="heroText">
+
+          <label>About Section</label>
+          <textarea id="aboutText" rows="4"></textarea>
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+
+      <div class="card" data-section="contact">
+        <h3>Contact Info</h3>
+        <input id="phone" placeholder="Phone">
+        <input id="email" placeholder="Email">
+        <input id="address" placeholder="Address">
+        <button type="button" onclick="saveContact()">Save Contact</button>
+      </div>
+
+      <div class="card" data-section="add-coffee">
+        <h3>Add Coffee Item</h3>
+        <input id="name" placeholder="Coffee Name">
+        <input id="price" placeholder="Price">
+        <input id="image" placeholder="Image path (images/coffee1.jpg)">
+        <button type="button" onclick="addItem()">Add Item</button>
+      </div>
+      <div id="adminMenu"></div>
+
+      <div class="card" data-section="bookings">
+        <h3>Table Bookings</h3>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="bookingTable"></tbody>
+        </table>
+      </div>
+
+      <div class="card" data-section="orders">
+        <h3>Orders</h3>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="orderTable"></tbody>
+        </table>
+      </div>
+
+
+
+
+    </main>
+
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

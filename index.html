@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Urban Brew | Premium Café Experience</title>
+  <meta name="description"
+    content="Urban Brew – premium handcrafted coffee, warm ambiance, and curated café experience.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <a href="https://wa.me/916386331981" class="whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    💬
+  </a>
+
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo">
+        Urban<span>Brew</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#booking" class="btn btn-primary">Book Table</a></li>
+          <li>
+            <button class="btn btn-secondary" onclick="openAdmin()">Admin Panel</button>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="home" class="hero">
+      <img src="assets/images/hero.png" alt="Hero Image" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+
+        <p class="eyebrow">Premium Café Experience</p>
+
+        <h1 class="hero-title">
+          Experience Coffee
+          <span class="accent">Like Never Before</span>
+        </h1>
+
+        <p class="hero-description">
+          Savor premium, handcrafted blends in a serene, luxurious third-wave café ambiance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Reserve Your Table</a>
+          <a href="#menu" class="btn btn-secondary">View Menu</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid grid-2">
+
+        <article class="about-content">
+          <h2 class="section-title">Our Story</h2>
+          <p>
+            Urban Brew is not just a café — it’s an experience. Inspired by third-wave coffee culture,
+            we bring ethically sourced beans, expert brewing, and warm design together.
+          </p>
+          <p>
+            Every cup tells a story of farmers, roasters, and passionate baristas.
+          </p>
+          <p>
+            We believe that coffee is more than a drink — it’s a moment to savor, a pause in your day, and a connection
+            with the people around you. Each sip is crafted to bring comfort, inspiration, and a touch of joy.
+          </p>
+          <p>
+            Our space is designed to be a cozy retreat from the everyday hustle, where friends gather, ideas flow, and
+            creativity sparks. From our carefully curated music to our ambient lighting, every detail contributes to a
+            welcoming atmosphere.
+          </p>
+          <p>
+            At Urban Brew, sustainability and community matter. We support local farmers, prioritize eco-friendly
+            practices, and create experiences that leave a positive impact beyond the cup.
+          </p>
+          <p>
+            Beyond the coffee, Urban Brew is a place where moments slow down and conversations come alive. Whether
+            you’re starting your morning with intention or unwinding after a long day, our café invites you to be
+            present, breathe deeply, and enjoy the art of living well. It’s not just about what’s in your cup — it’s
+            about how it makes you feel.
+          </p>
+
+          <!-- Signature Quote -->
+          <div class="story-quote">
+            <p>“Great coffee is a language of its own.”</p>
+          </div>
+
+          <!-- Story Highlights -->
+          <div class="story-highlights">
+            <span>☕ Ethically Sourced</span>
+            <span>🌿 Sustainable</span>
+            <span>🤍 Community Driven</span>
+          </div>
+
+          <p class="signature">
+            — Crafted by SoyYoDev
+          </p>
+
+
+        </article>
+
+        <div class="card glass">
+          <img src="assets/images/about.png" alt="Urban Brew café interior with warm lighting">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="menu" class="section section-muted">
+      <div class="container">
+
+        <h2 class="section-title center">Signature Menu</h2>
+
+        <div class="grid grid-3" id="menuItems"></div>
+
+
+        <!-- <div class="grid grid-3" id="menuItems">
+
+          <article class="card glass menu-item">
+            <img src="assets/images/cappuccino.png" alt="Cappuccino coffee">
+            <div class="menu-info">
+              <h3>Cappuccino</h3>
+              <span class="price">₹180</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/coldbrew.png" alt="Cold brew coffee">
+            <div class="menu-info">
+              <h3>Cold Brew</h3>
+              <span class="price">₹220</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/hazelnutlatte.png" alt="Hazelnut latte">
+            <div class="menu-info">
+              <h3>Hazelnut Latte</h3>
+              <span class="price">₹240</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/mochaccino.png" alt="Mochaccino">
+            <div class="menu-info">
+              <h3>Mochaccino</h3>
+              <span class="price">₹250</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/espresso.png" alt="Espresso">
+            <div class="menu-info">
+              <h3>Espresso</h3>
+              <span class="price">₹150</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/latte.png" alt="Latte">
+            <div class="menu-info">
+              <h3>Latte</h3>
+              <span class="price">₹200</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/americano.png" alt="Americano">
+            <div class="menu-info">
+              <h3>Americano</h3>
+              <span class="price">₹170</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/caramellatte.png" alt="Caramel Latte">
+            <div class="menu-info">
+              <h3>Caramel Latte</h3>
+              <span class="price">₹220</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/macchiato.png" alt="Macchiato">
+            <div class="menu-info">
+              <h3>Macchiato</h3>
+              <span class="price">₹210</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/pumpkinspicelatte.png" alt="Pumpkin Spice Latte">
+            <div class="menu-info">
+              <h3>Pumpkin Spice Latte</h3>
+              <span class="price">₹260</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/irishcoffee.png" alt="Irish Coffee">
+            <div class="menu-info">
+              <h3>Irish Coffee</h3>
+              <span class="price">₹280</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/vanillalatte.png" alt="Vanilla Latte">
+            <div class="menu-info">
+              <h3>Vanilla Latte</h3>
+              <span class="price">₹230</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/matchalatte.png" alt="Matcha Latte">
+            <div class="menu-info">
+              <h3>Matcha Latte</h3>
+              <span class="price">₹250</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/affogato.png" alt="Affogato">
+            <div class="menu-info">
+              <h3>Affogato</h3>
+              <span class="price">₹270</span>
+            </div>
+          </article>
+
+          <article class="card glass menu-item">
+            <img src="assets/images/frenchpress.png" alt="French Press Coffee">
+            <div class="menu-info">
+              <h3>French Press</h3>
+              <span class="price">₹260</span>
+            </div>
+          </article>
+
+        </div> -->
+      </div>
+    </section>
+
+    <div class="order-modal" id="orderModal">
+      <div class="order-box">
+        <h2>Place Order</h2>
+
+        <input type="text" id="orderName" placeholder="Your Name">
+        <input type="tel" id="orderPhone" placeholder="Phone Number">
+
+        <p id="selectedItem"></p>
+        <input type="number" id="orderQty" value="1" min="1">
+
+        <button onclick="submitOrder()">Confirm Order</button>
+        <button onclick="closeOrderModal()">Cancel</button>
+      </div>
+    </div>
+
+
+
+    <section id="booking" class="section">
+      <div class="container container-sm">
+
+        <h2 class="section-title center">Book a Table</h2>
+
+        <form class="card glass form" id="bookingForm">
+
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">
+            Confirm Booking
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+    <section id="ratings" class="section section-muted">
+      <div class="container">
+
+        <h2 class="section-title center">Rate Our Café</h2>
+
+        <div class="rating-widget glass">
+          <p class="rating-text">Click to rate your experience:</p>
+          <div id="stars">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <button id="submitRating" class="btn btn-primary">Submit Rating</button>
+        </div>
+
+        <p class="average-rating">Average Rating: <span id="avgRating">0</span> ⭐</p>
+
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="container">
+        <h2>Visit Us</h2>
+        <div class="contact-info">
+          <div class="info-card glass-card"> <img src="assets/icons/phone.png" alt="" aria-hidden="true"> <a
+              href="tel:+916386331981">+91 6386331981</a> </div>
+          <div class="info-card glass-card"> <img src="assets/icons/mail.png" alt="" aria-hidden="true"> <a
+              id="emailLink">urbanbrew@email.com</a> </div>
+          <div class="info-card glass-card"> <img src="assets/icons/location.png" alt="" aria-hidden="true">
+            <p>Lucknow, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </main>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <p>© 2026 Urban Brew Café. All rights reserved.</p>
+
+      <a href="https://www.instagram.com/soy_yo.dev" aria-label="Instagram">
+        <img src="assets/icons/instagram.png" alt="">
+      </a>
+      <a href="https://x.com/soy_yo_dev40" aria-label="Instagram">
+        <img src="assets/icons/x.png" alt="">
+      </a>
+
+      <p class="credit">
+        Crafted with ☕ by <strong>SoyYoDev</strong>
+      </p>
+
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
