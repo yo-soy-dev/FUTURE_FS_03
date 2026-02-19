@@ -941,7 +941,6 @@ This is an internship project. For suggestions or improvements, please contact:
 ## 📄 License
 
 This project is open source and available under the MIT License.
-**For educational purposes only.**
 
 ---
 
