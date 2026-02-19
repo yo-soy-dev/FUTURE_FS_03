@@ -11,7 +11,7 @@
 
 ## 📋 Project Overview
 
-**Urban Brew Cafe** is a modern café management system developed as part of the **Future Interns – Full Stack Web Development (Task 3)** internship program. The platform implements a unique **booking-first approach** where customers must reserve a table before placing any coffee order. Upon successful booking, an automatic WhatsApp confirmation is sent to the café owner, ensuring real-time communication and streamlined operations.
+**Urban Brew Cafe** is a modern café management system I developed to showcase my full-stack JavaScript capabilities. The platform implements a unique **booking-first approach** where customers must reserve a table before placing any coffee order. Upon successful booking, an automatic WhatsApp confirmation is sent to the café owner, ensuring real-time communication and streamlined operations.
 
 The system features a complete **Admin Panel** for comprehensive management of menu items, content, contact details, and customer analytics. All data is efficiently handled using **LocalStorage**, making it a lightweight, serverless solution.
 
@@ -628,19 +628,6 @@ This project demonstrates proficiency in:
 
 ---
 
-## 🏆 Internship Details
-
-| Detail | Information |
-|--------|-------------|
-| 🎓 **Program** | Future Interns – Full Stack Web Development |
-| 📝 **Task Number** | Task 3 |
-| 💼 **Project Name** | Urban Brew Cafe – Management Website |
-| 🛠️ **Technologies** | JavaScript + LocalStorage + WhatsApp Integration |
-| 👨‍💻 **Developer** | [Your Name] |
-| 📅 **Completion Date** | [Date] |
-
----
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
@@ -953,14 +940,13 @@ This is an internship project. For suggestions or improvements, please contact:
 
 ## 📄 License
 
-This project is developed as part of an internship program at **Future Interns**.  
+This project is open source and available under the MIT License.
 **For educational purposes only.**
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **Future Interns** - For providing the internship opportunity
 - **Urban Brew Cafe** - Concept and project inspiration
 - **Open Source Community** - For JavaScript resources and documentation
 
